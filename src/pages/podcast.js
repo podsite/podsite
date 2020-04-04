@@ -2,10 +2,9 @@ import React, { useState } from "react"
 import axios from "axios"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import XMLParser from "react-xml-parser"
 import ReactAudioPlayer from "react-audio-player"
-
 import { usePodDispatch, usePodState } from "../state"
+var parseString = require("xml2js").parseString
 
 const PodcastPage = () => {
   const [xml, setXml] = useState(null)
@@ -14,35 +13,28 @@ const PodcastPage = () => {
 
   function parseXml() {
     const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
-    axios.get(CORS_PROXY + xml).then(response => {
-      const res = new XMLParser().parseFromString(response.data)
-      console.log(res)
+    axios.get(xml).then(response => {
+      parseString(response.data, function(err, res) {
+        console.log(res)
 
-      const podcast = {
-        title: res.children[0].children.find(x => x.name === "title").value,
-        description: res.children[0].children.find(
-          x => x.name === "description"
-        ).value,
-        image: res.children[0].children
-          .find(x => x.name === "image")
-          .children.find(x => x.name === "url").value,
-        episodes: res.children[0].children
-          .filter(x => x.name === "item")
-          .slice(0, 9)
-          .map(x => {
+        const podcast = {
+          title: res.rss.channel[0].title[0],
+          description: res.rss.channel[0].description[0],
+          image: res.rss.channel[0].image[0].url[0],
+          episodes: res.rss.channel[0].item.slice(0, 9).map(x => {
             const ep = {
-              title: x.children.find(x => x.name === "title").value,
-              description: x.children.find(x => x.name === "description").value,
-              published: x.children.find(x => x.name === "pubDate").value,
-              url: x.children.find(x => x.name === "link").value,
-              duration: x.children.find(x => x.name === "itunes:duration")
-                .value,
+              title: x.title[0],
+              description: x.description[0],
+              published: x.pubDate[0],
+              url: x.link[0],
             }
             return ep
           }),
-      }
-      podDispatch({ type: "set", podcast: podcast })
-      console.log(podcast)
+        }
+        podDispatch({ type: "set", podcast: podcast })
+        console.log(podcast)
+      })
+      // console.log(res)
     })
   }
   return (
