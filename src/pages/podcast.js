@@ -19,8 +19,8 @@ const PodcastPage = () => {
 
         const podcast = {
           title: res.rss.channel[0].title[0],
-          description: res.rss.channel[0].description[0],
-          image: res.rss.channel[0].image[0].url[0],
+          description: res.rss.channel[0]["itunes:summary"][0],
+          image: res.rss.channel[0]["itunes:image"][0].$.href,
           episodes: res.rss.channel[0].item.slice(0, 9).map(x => {
             const ep = {
               title: x.title[0],
