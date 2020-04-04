@@ -13,7 +13,7 @@ const PodcastPage = () => {
 
   function parseXml() {
     const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
-    axios.get(xml).then(response => {
+    axios.get(CORS_PROXY + xml).then(response => {
       parseString(response.data, function(err, res) {
         console.log(res)
 
