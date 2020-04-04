@@ -5,9 +5,11 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@n8tb1t/use-scroll-position": "^1.0.43",
     "axios": "^0.19.2",
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.44",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-manifest": "^2.2.48",
     "gatsby-plugin-offline": "^3.0.41",
     "gatsby-plugin-react-helmet": "^3.1.24",
@@ -19,7 +21,9 @@
     "react-audio-player": "^0.11.1",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "react-icons": "^3.9.0",
     "react-xml-parser": "^1.1.6",
+    "styled-components": "^5.0.1",
     "xml2js": "^0.4.23"
   },
   "devDependencies": {
