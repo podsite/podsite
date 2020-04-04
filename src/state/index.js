@@ -23,6 +23,8 @@ function podReducer(state, action) {
   switch (action.type) {
     case "set":
       return action.podcast
+    case "clear":
+      return {}
 
     default:
       return state
