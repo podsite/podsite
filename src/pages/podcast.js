@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import axios from "axios"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -11,10 +11,6 @@ const PodcastPage = () => {
   const [xml, setXml] = useState(null)
   const podDispatch = usePodDispatch()
   const podState = usePodState()
-
-  useEffect(() => {
-    console.log(podState)
-  }, [podState])
 
   function parseXml() {
     const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
