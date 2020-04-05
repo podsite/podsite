@@ -26,9 +26,42 @@ const IndexPage = () => {
       </Section>
       <Section anchor="about">
         <Left>
-          <h2>asd</h2>
+          <h2>Mindre poddar</h2>
+          <Section>
+            <Left>
+              <h3>Starter</h3>
+              <p>En simpel hemsida</p>
+              <p>Supersnabb</p>
+              <p>SEO-optimerad</p>
+              <p>Zero maintenance</p>
+              <p>199:- per månad</p>
+            </Left>
+            <Right>
+              <h3>Growth</h3>
+              <p>Blogg</p>
+              <p>Rich content</p>
+              <p>Analytics</p>
+              <p>Social media</p>
+              <p>399:- per månad</p>
+            </Right>
+          </Section>
         </Left>
-        <Right>123</Right>
+        <Right>
+          <h2>Större poddar</h2>
+          <Section>
+            <Left>
+              <h3>Accelerate</h3>
+              <p>E-commerce</p>
+              <p>Klarna checkout</p>
+              <p>599:- per månad</p>
+            </Left>
+            <Right>
+              <h3>Custom</h3>
+              <p>Skräddarsydd site efter dina behov</p>
+              <p>Kontakta oss</p>
+            </Right>
+          </Section>
+        </Right>
       </Section>
       <Section anchor="frame">
         {podState && podState.title && (
