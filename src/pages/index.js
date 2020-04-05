@@ -29,7 +29,7 @@ const IndexPage = () => {
           <h2>Mindre poddar</h2>
           <Section>
             <Left>
-              <h3>Starter</h3>
+              <h3>Start</h3>
               <p>En simpel hemsida</p>
               <p>Supersnabb</p>
               <p>SEO-optimerad</p>
@@ -37,7 +37,7 @@ const IndexPage = () => {
               <p>199:- per månad</p>
             </Left>
             <Right>
-              <h3>Growth</h3>
+              <h3>Grow</h3>
               <p>Blogg</p>
               <p>Rich content</p>
               <p>Analytics</p>
