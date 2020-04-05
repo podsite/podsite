@@ -31,12 +31,15 @@ const RSSInput = () => {
                   title: x.title[0],
                   description: x.description[0],
                   published: x.pubDate[0],
-                  url: x.link[0],
+                  url: x.enclosure[0].$.url,
                 }
+                console.log(ep)
+
                 return ep
               }),
             }
             podDispatch({ type: "set", podcast: podcast })
+            setLoading(false)
             navigate("#frame")
           })
         } else {
