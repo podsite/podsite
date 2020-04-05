@@ -2,12 +2,10 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import Logo from "../images/logo.svg"
 import { useScrollPosition } from "@n8tb1t/use-scroll-position"
-import { navigate, Link } from "gatsby"
-import { usePodDispatch } from "../state"
+import { Link } from "gatsby"
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
-  const podDispatch = usePodDispatch()
 
   useScrollPosition(({ currPos }) => {
     currPos.y > -150 ? setIsScrolled(false) : setIsScrolled(true)
