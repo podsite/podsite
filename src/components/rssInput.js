@@ -4,6 +4,7 @@ import { usePodDispatch } from "../state"
 import { navigate } from "gatsby"
 import axios from "axios"
 import { Spinner } from "@theme-ui/components"
+import Button from "./button"
 var parseString = require("xml2js").parseString
 
 const RSSInput = () => {
@@ -59,7 +60,9 @@ const RSSInput = () => {
       {loading ? (
         <Spinner />
       ) : (
-        <Button onClick={() => parseXml()}>Tjuvkolla</Button>
+        <Button textColor="#f7b6b4" onClick={() => parseXml()}>
+          Tjuvkolla
+        </Button>
       )}
     </>
   )
@@ -81,24 +84,5 @@ const Input = styled.input`
 
   &::placeholder {
     color: white;
-  }
-`
-const Button = styled.button`
-  padding: 7px 25px 5px 25px;
-  font-size: 26px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border: 3px solid white;
-  border-radius: 10px;
-  font-family: "Baloo 2";
-  font-weight: 800;
-  cursor: pointer;
-  background-color: white;
-  color: #f7b6b4;
-  transition: background-color 50ms ease-in;
-
-  &:hover {
-    color: white;
-    background-color: transparent;
   }
 `

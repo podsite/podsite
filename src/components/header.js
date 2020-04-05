@@ -59,6 +59,7 @@ const Wrapper = styled.header`
 const Menu = styled.nav`
   position: absolute;
   left: 50%;
+  padding-left: 80px;
 `
 
 const StyledLogo = styled.img``
