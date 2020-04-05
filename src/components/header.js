@@ -11,7 +11,6 @@ const Header = () => {
 
   useScrollPosition(({ currPos }) => {
     currPos.y > -150 ? setIsScrolled(false) : setIsScrolled(true)
-    console.log(currPos.y, isScrolled)
   })
 
   return (

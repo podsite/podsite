@@ -27,6 +27,7 @@ const IndexPage = () => {
         </Left>
         <Right>123</Right>
       </Section>
+      <Section anchor="frame">{/* HÄR */}</Section>
     </Layout>
   )
 }
