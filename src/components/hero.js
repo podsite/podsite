@@ -8,8 +8,8 @@ const Hero = () => {
   return (
     <Wrapper>
       <Inner>
-        <h1>Byggt av poddare, för poddare</h1>
-        <p>Ge din podcast ett nytt ansikte.</p>
+        <h1>Varje podcast ska ha en riktigt snygg hemsida.</h1>
+        <p>Vi löser det åt dig.</p>
         <RSSInput />
       </Inner>
       <a href="#why">

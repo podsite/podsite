@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import Hero from "../components/hero"
 import Section, { Left, Right } from "../components/section"
 import SEO from "../components/seo"
+import styled from "styled-components"
 import { usePodState } from "../state"
 import ReactAudioPlayer from "react-audio-player"
 
@@ -10,7 +11,7 @@ const IndexPage = () => {
   const podState = usePodState()
   return (
     <Layout>
-      <SEO title="Lyft din podd" />
+      <SEO title="Hemsida till din podcast" />
       <Hero />
       <Section anchor="why">
         <Left>
@@ -25,55 +26,55 @@ const IndexPage = () => {
         <Right>123</Right>
       </Section>
       <Section anchor="about">
-        <Left>
+        <Lefter>
           <h2>Mindre poddar</h2>
           <Section>
-            <Left>
+            <Lefter>
               <h3>Start</h3>
-              <p>En simpel hemsida</p>
-              <p>Supersnabb</p>
-              <p>SEO-optimerad</p>
-              <p>Zero maintenance</p>
-              <p>199:- per månad</p>
-            </Left>
-            <Right>
+              <P>En simpel hemsida</P>
+              <P>Supersnabb</P>
+              <P>SEO-optimerad</P>
+              <P>Zero maintenance</P>
+              <P>199:- per månad</P>
+            </Lefter>
+            <Righter>
               <h3>Grow</h3>
-              <p>Blogg</p>
-              <p>Rich content</p>
-              <p>Analytics</p>
-              <p>Social media</p>
-              <p>399:- per månad</p>
-            </Right>
+              <P>Blogg</P>
+              <P>Rich content</P>
+              <P>Analytics</P>
+              <P>Social media</P>
+              <P>399:- per månad</P>
+            </Righter>
           </Section>
-        </Left>
-        <Right>
+        </Lefter>
+        <Righter>
           <h2>Större poddar</h2>
           <Section>
-            <Left>
+            <Lefter>
               <h3>Accelerate</h3>
-              <p>E-commerce</p>
-              <p>Klarna checkout</p>
-              <p>599:- per månad</p>
-            </Left>
-            <Right>
+              <P>E-commerce</P>
+              <P>Klarna checkout</P>
+              <P>599:- per månad</P>
+            </Lefter>
+            <Righter>
               <h3>Custom</h3>
-              <p>Skräddarsydd site efter dina behov</p>
-              <p>Kontakta oss</p>
-            </Right>
+              <P>Skräddarsydd site efter dina behov</P>
+              <P>Kontakta oss</P>
+            </Righter>
           </Section>
-        </Right>
+        </Righter>
       </Section>
       <Section anchor="frame">
         {podState && podState.title && (
           <>
             <h1>{podState.title}</h1>
-            <p>{podState.description}</p>
+            <P>{podState.description}</P>
             <img src={podState.image} alt="hej" />
             {podState.episodes.map(x => (
               <>
                 <h2>{x.title}</h2>
-                <p>{x.description}</p>
-                <p>{x.published}</p>
+                <P>{x.description}</P>
+                <P>{x.published}</P>
                 <ReactAudioPlayer src={x.url} autoPlay={false} controls />
               </>
             ))}
@@ -85,3 +86,15 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+const Lefter = styled.div`
+  flex: 1 1 50%;
+  padding: 5px;
+`
+const Righter = styled.div`
+  flex: 1 1 50%;
+  padding: 5px;
+`
+export const P = styled.p`
+  padding: 0px;
+`

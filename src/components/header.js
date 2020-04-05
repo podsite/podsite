@@ -18,8 +18,7 @@ const Header = () => {
       </Link>
       <Menu>
         <a href="#why">#varför</a>
-        <a href="#how">#hur</a>
-        <a href="#about">#om</a>
+        <a href="#about">#produkter</a>
       </Menu>
     </Wrapper>
   )
