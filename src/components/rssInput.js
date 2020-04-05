@@ -33,7 +33,6 @@ const RSSInput = () => {
                   published: x.pubDate[0],
                   url: x.enclosure[0].$.url,
                 }
-                console.log(ep)
 
                 return ep
               }),
