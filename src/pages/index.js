@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import Section, { Left, Right } from "../components/section"
@@ -16,7 +16,7 @@ import { motion } from "framer-motion"
 const IndexPage = () => {
   const podState = usePodState()
   const [ref, inView] = useInView()
-  useEffect(() => {}, [inView])
+
   return (
     <Layout>
       <SEO title="Hemsida till din podcast" />
