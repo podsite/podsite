@@ -1,38 +1,60 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import Section, { Left, Right } from "../components/section"
 import SEO from "../components/seo"
 import styled from "styled-components"
 import { usePodState } from "../state"
+import { useInView } from "react-intersection-observer"
 import ReactAudioPlayer from "react-audio-player"
 import Image1 from "../images/section1.jpg"
 import Image2 from "../images/section2.jpg"
 import Button from "../components/button"
 import PriceCard from "../components/priceCard"
+import { motion } from "framer-motion"
 
 const IndexPage = () => {
   const podState = usePodState()
+  const [ref, inView] = useInView()
+  useEffect(() => {}, [inView])
   return (
     <Layout>
       <SEO title="Hemsida till din podcast" />
       <Hero />
+      <Section />
       <Section anchor="why">
-        <Left>
-          <h2>Varför? Därför.</h2>
-          <p>
-            Vi stöter ofta på podcasts med fula hemsidor. Som webbutveklare och
-            podcastfanatiker kände vi att vi hade en bra kombination av kunskap
-            och intresse för att göra någonting åt saken.
-          </p>
-          <p>
-            Vår lösning är en plattform där du som poddare kan presentera din
-            podd i ett schysst theme, med zero maintenance, top notch SEO och
-            oslagbar hastighet.
-          </p>
-          <Button>Se våra paket</Button>
-        </Left>
-        <Right noPadding backgroundImage={Image1}></Right>
+        {/* <div ref={ref}> */}
+        <div ref={ref}>
+          {inView && (
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                delay: 0.4,
+                duration: 0.4,
+              }}
+            >
+              <Left>
+                <h2>Varför? Därför.</h2>
+                <p>
+                  Vi stöter ofta på podcasts med fula hemsidor. Som
+                  webbutveklare och podcastfanatiker kände vi att vi hade en bra
+                  kombination av kunskap och intresse för att göra någonting åt
+                  saken.
+                </p>
+                <p>
+                  Vår lösning är en plattform där du som poddare kan presentera
+                  din podd i ett schysst theme, med zero maintenance, top notch
+                  SEO och oslagbar hastighet.
+                </p>
+                <Button>Se våra paket</Button>
+              </Left>
+              <Right noPadding backgroundImage={Image1}></Right>
+            </motion.div>
+          )}
+        </div>
+
+        {/* </div> */}
       </Section>
       <Section anchor="about" fullWidth backgroundImage={Image2}>
         <h2 style={{ textAlign: "center" }}>Paket</h2>
