@@ -20,7 +20,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Hemsida till din podcast" />
       <Hero />
-      <Section anchor="why">
+      <Section anchor="about">
         <Left>
           <IO>
             <motion.div

@@ -25,12 +25,12 @@ const Header = () => {
       </Link>
       <Menu>
         <a onClick={() => toggleMobileMenu(false)} href="#about">
-          #products
-        </a>
-        <a onClick={() => toggleMobileMenu(false)} href="#">
           #about
         </a>
-        <a onClick={() => toggleMobileMenu(false)} href="#why">
+        <a onClick={() => toggleMobileMenu(false)} href="#products">
+          #products
+        </a>
+        <a onClick={() => toggleMobileMenu(false)} href="#demo">
           #demo
         </a>
       </Menu>
