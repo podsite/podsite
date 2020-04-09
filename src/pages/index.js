@@ -7,7 +7,7 @@ import styled from "styled-components"
 import { usePodState } from "../state"
 import ReactAudioPlayer from "react-audio-player"
 import Image1 from "../images/section1.jpg"
-import Image2 from "../images/section2.jpg"
+import Image2 from "../images/mountains.svg"
 import Button from "../components/button"
 import PriceCard from "../components/priceCard"
 import IO from "../components/io"
@@ -114,4 +114,12 @@ const PackageWrapper = styled.div`
   grid-gap: 50px;
   margin: 0 auto 100px auto;
   max-width: 1200px;
+
+  @media (max-width: 1200px) {
+    grid-gap: 10px;
+  }
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
 `

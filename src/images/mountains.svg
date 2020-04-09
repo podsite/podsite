@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="423.33331mm"
+   height="238.125mm"
+   viewBox="0 0 423.33331 238.125"
+   version="1.1"
+   id="svg7551"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="mountains.svg">
+  <defs
+     id="defs7545" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="216.70951"
+     inkscape:cy="59.907961"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g8143"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1080"
+     inkscape:window-x="244"
+     inkscape:window-y="160"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7548">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(310.02471,-52.493903)">
+    <g
+       id="g8143"
+       transform="matrix(-0.26458333,0,0,-0.26458333,113.30862,290.6189)">
+      <g
+         id="g8168"
+         transform="rotate(180,800,450)">
+        <rect
+           style="fill:#e79d9e;fill-opacity:1"
+           y="0"
+           x="0"
+           width="1600"
+           height="900"
+           id="rect8096" />
+        <path
+           sodipodi:nodetypes="cccc"
+           inkscape:connector-curvature="0"
+           id="polygon8098"
+           d="M 1396,900 871.28571,575.71429 539,900 Z"
+           style="fill:#5290ae;fill-opacity:1" />
+        <path
+           sodipodi:nodetypes="cccc"
+           inkscape:connector-curvature="0"
+           id="polygon8100"
+           d="M 1396,900 871.28571,575.71429 872.9,900 Z"
+           style="fill:#6aa0ba;fill-opacity:1" />
+        <path
+           sodipodi:nodetypes="cccc"
+           inkscape:connector-curvature="0"
+           id="polygon8102"
+           d="M 816,900 H 0 L 317.1878,664.02031 Z"
+           style="fill:#a8dbd7;fill-opacity:1" />
+        <path
+           sodipodi:nodetypes="cccc"
+           inkscape:connector-curvature="0"
+           id="polygon8104"
+           d="M 816,900 H 337 L 317.1878,664.02031 Z"
+           style="fill:#c9e9e6;fill-opacity:1" />
+        <polygon
+           style="fill:#69c1ba;fill-opacity:1"
+           points="876,900 1203,546 1552,900 "
+           id="polygon8106" />
+        <polygon
+           style="fill:#94d3ce;fill-opacity:1"
+           points="1162,900 1203,546 1552,900 "
+           id="polygon8108" />
+        <polygon
+           style="fill:#69d0be;fill-opacity:1"
+           points="367,900 641,695 886,900 "
+           id="polygon8110" />
+        <polygon
+           style="fill:#9cd1c8;fill-opacity:1"
+           points="886,900 587,900 641,695 "
+           id="polygon8112" />
+        <path
+           sodipodi:nodetypes="cccc"
+           inkscape:connector-curvature="0"
+           id="polygon8114"
+           d="m 1096,900 h 504 L 1401,632 Z"
+           style="fill:#7cc3b6;fill-opacity:1" />
+        <path
+           sodipodi:nodetypes="cccc"
+           inkscape:connector-curvature="0"
+           id="polygon8116"
+           d="m 1365,900 h 235 L 1401,632 Z"
+           style="fill:#bee1db;fill-opacity:1" />
+        <polygon
+           style="fill:#80aec4;fill-opacity:1"
+           points="725,900 1210,900 971,687 "
+           id="polygon8118" />
+        <polygon
+           style="fill:#9cc0d1;fill-opacity:1"
+           points="971,687 943,900 1210,900 "
+           id="polygon8120" />
+      </g>
+    </g>
+  </g>
+</svg>

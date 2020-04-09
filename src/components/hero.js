@@ -31,10 +31,22 @@ const Wrapper = styled.div`
   overflow: hidden;
   padding: 0 100px;
   position: relative;
+
+  @media (max-width: 1200px) {
+    padding: 0 50px;
+  }
+
+  @media (max-width: 800px) {
+    padding: 0 20px;
+  }
 `
 
 const Inner = styled.div`
   padding-top: 180px;
+
+  @media (max-width: 800px) {
+    padding-top: 100px;
+  }
 `
 
 const StyledAiOutlineDownCircle = styled(AiOutlineDownCircle)`
@@ -49,5 +61,9 @@ const StyledAiOutlineDownCircle = styled(AiOutlineDownCircle)`
 
   &:hover {
     transform: translate(-50%, 10px);
+  }
+
+  @media (max-width: 800px) {
+    bottom: 10px;
   }
 `
