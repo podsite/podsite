@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import { usePodDispatch } from "../state"
 import { navigate } from "gatsby"
@@ -12,11 +12,15 @@ const RSSInput = () => {
   const [loading, setLoading] = useState(false)
   const podDispatch = usePodDispatch()
 
-  function parseXml() {
+  useEffect(() => {
+    parseXml("https://feed.pod.space/filipandfredrik")
+  }, [])
+
+  function parseXml(feed) {
     setLoading(true)
     const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
     axios
-      .get(CORS_PROXY + xml)
+      .get(CORS_PROXY + feed)
       .then(response => {
         console.log(response)
         if (response.status === 200) {
@@ -60,7 +64,7 @@ const RSSInput = () => {
       {loading ? (
         <Spinner />
       ) : (
-        <Button textColor="#f7b6b4" onClick={() => parseXml()}>
+        <Button textColor="#f7b6b4" onClick={() => parseXml(xml)}>
           Tjuvkolla
         </Button>
       )}
