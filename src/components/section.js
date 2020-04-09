@@ -17,7 +17,7 @@ export default Section
 
 const Wrapper = styled.a`
   display: flex;
-  min-height: 100vh;
+  min-height: 110vh;
   color: white;
   background-color: #111;
 

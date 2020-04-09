@@ -16,7 +16,7 @@ html {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: "Baloo 2";
   font-weight: 700;
 }
@@ -34,6 +34,11 @@ h2 {
 h3 {
   font-size: 40px;
   line-height: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 20px;
 }
 
 p {

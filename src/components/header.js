@@ -17,8 +17,9 @@ const Header = () => {
         <StyledLogo src={Logo} />
       </Link>
       <Menu>
-        <a href="#why">#varför</a>
-        <a href="#about">#produkter</a>
+        <a href="#about">#products</a>
+        <a href="#">#about</a>
+        <a href="#why">#demo</a>
       </Menu>
     </Wrapper>
   )
