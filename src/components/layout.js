@@ -24,16 +24,31 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 60px;
   line-height: 60px;
+
+  @media (max-width: 800px) {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 h2 {
   font-size: 50px;
   line-height: 50px;
+
+  @media (max-width: 800px) {
+    font-size: 35px;
+    line-height: 35px;
+  }
 }
 
 h3 {
   font-size: 40px;
   line-height: 40px;
+
+  @media (max-width: 800px) {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 h4 {
@@ -46,6 +61,11 @@ p {
   margin-bottom: 100px;
   font-family: "Merriweather";
   font-weight: 400;
+
+  @media (max-width: 800px) {
+    font-size: 24px;
+    margin-bottom: 60px;
+  }
 }
 
 ul {

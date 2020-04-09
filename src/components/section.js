@@ -30,6 +30,14 @@ const Wrapper = styled.a`
     `
     display: block;
     padding: 175px 100px;
+
+    @media (max-width: 1200px) {
+        padding: 175px 20px;
+    }
+
+    @media (max-width: 800px) {
+        padding: 175px 20px;
+    }
   `}
 
   ${props =>
@@ -48,6 +56,10 @@ const RightLeftCommonStyles = css`
         background-image: url(${props.backgroundImage});
         background-size: cover;
         background-position: center;
+
+        @media (max-width: 800px) {
+            display: none;
+        }
     `}
 `
 
@@ -55,6 +67,15 @@ export const Left = styled.div`
   ${RightLeftCommonStyles}
   flex: 0 0 50%;
   padding: 175px 100px;
+
+  @media (max-width: 1200px) {
+    padding: 175px 50px;
+  }
+
+  @media (max-width: 800px) {
+    padding: 175px 20px;
+    flex-basis: 100%;
+  }
 `
 
 export const Right = styled.div`
