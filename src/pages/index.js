@@ -20,7 +20,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Hemsida till din podcast" />
       <Hero />
-      <Section anchor="why">
+      <Section anchor="about">
         <IO>
           <motion.div
             initial={{ opacity: 0, y: 15 }}
@@ -40,7 +40,7 @@ const IndexPage = () => {
         </IO>
         <Right noPadding backgroundImage={Image1}></Right>
       </Section>
-      <Section anchor="about" fullWidth backgroundImage={Image2}>
+      <Section anchor="products" fullWidth backgroundImage={Image2}>
         <IO>
           <h2 style={{ textAlign: "center" }}>Produkter</h2>
           <PackageWrapper>
@@ -69,7 +69,7 @@ const IndexPage = () => {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.5,
+                delay: 0.4,
                 duration: 0.4,
               }}
             >
@@ -90,7 +90,7 @@ const IndexPage = () => {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.6,
+                delay: 0.4,
                 duration: 0.4,
               }}
             >
@@ -110,7 +110,7 @@ const IndexPage = () => {
           </PackageWrapper>
         </IO>
       </Section>
-      <Section anchor="frame">
+      <Section anchor="#demo">
         {podState && podState.title && (
           <>
             <h1>{podState.title}</h1>

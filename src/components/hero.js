@@ -27,7 +27,7 @@ const Wrapper = styled.div`
   background-size: cover;
   background-position: center;
   color: white;
-  height: 100vh;
+  height: 105vh;
   overflow: hidden;
   padding: 0 100px;
   position: relative;
