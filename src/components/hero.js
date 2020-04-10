@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Image from "../images/insp/test.jpeg"
+import Image from "../images/insp/test.jpg"
 import { AiOutlineDownCircle } from "react-icons/ai"
 import RSSInput from "./rssInput"
 
