@@ -22,11 +22,8 @@ const RSSInput = () => {
     axios
       .get(CORS_PROXY + feed)
       .then(response => {
-        console.log(response)
         if (response.status === 200) {
           parseString(response.data, function(err, res) {
-            console.log(res)
-
             const podcast = {
               title: res.rss.channel[0].title[0],
               description: res.rss.channel[0]["itunes:summary"][0],

@@ -31,9 +31,9 @@ const IndexPage = () => {
                 duration: 0.4,
               }}
             >
-              <h2>Du ger din podcast en röst.</h2>
+              <h2>Bra poddar finns inte bara där poddar finns.</h2>
+              <p>Du ger din podcast en röst.</p>
               <p>Vi ger den ett ansikte på nätet.</p>
-              <p>Bra poddar finns inte bara där poddar finns.</p>
               <Button>Se våra produkter</Button>
             </motion.div>
           </IO>
@@ -89,13 +89,13 @@ const IndexPage = () => {
             <h1>{podState.title}</h1>
             <li>{podState.description}</li>
             <img src={podState.image} alt="hej" />
-            {podState.episodes.map(x => (
-              <>
+            {podState.episodes.map((x, i) => (
+              <React.Fragment key={i}>
                 <h2>{x.title}</h2>
                 <li>{x.description}</li>
                 <li>{x.published}</li>
                 <ReactAudioPlayer src={x.url} autoPlay={false} controls />
-              </>
+              </React.Fragment>
             ))}
           </>
         )}

@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <Wrapper>
       <Inner>
-        <h1>Varje podcast ska ha en riktigt snygg hemsida.</h1>
+        <h1>Varje podcast ska ha en snygg hemsida.</h1>
         <p>Vi löser det åt dig.</p>
         <RSSInput />
       </Inner>
